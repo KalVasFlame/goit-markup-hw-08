@@ -1,0 +1,118 @@
+$majorTextColor: #757575;
+$titleTextColor: #212121;
+$accentColor: #2196f3;
+$whiteColor: #ffffff;
+$minorWhiteColor: rgba(255, 255, 255, 0.6);
+$minorBgColor: #2f303a;
+$subBgColor: #f5f4fa;
+$iconMainColor: #afb1b8;
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: $majorTextColor;
+  font-family: "Roboto", sans-serif;
+}
+img {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $titleTextColor;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+a {
+  text-decoration: none;
+}
+button {
+  border: 0;
+}
+
+a:active,
+a:focus {
+  outline: none;
+}
+
+input,
+textarea {
+  outline: none;
+}
+input:active,
+textarea:active {
+  outline: none;
+}
+:focus {
+  outline: none;
+}
+textarea {
+  resize: none;
+}
+textarea {
+  resize: vertical;
+}
+textarea {
+  resize: horizontal;
+}
+
+ul {
+  padding-inline-start: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+
+li {
+  padding-inline-start: 0px;
+  list-style-type: none;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+input {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  margin: 0 auto;
+  width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.instagram-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.twitter-icon {
+  width: 20px;
+  height: 16px;
+}
+.facebook-icon {
+  width: 10px;
+  height: 20px;
+}
+.linkedin-icon {
+  width: 20px;
+  height: 20px;
+}
