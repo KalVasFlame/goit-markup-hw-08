@@ -7,12 +7,12 @@
   display: none;
 }
 .feature-list {
-  display: flex;
+  // display: flex;
 
   & .feature-item::before {
     content: "";
     display: inline-flex;
-    width: 270px;
+    width: calc(100% - 30px);
     height: 120px;
     margin-bottom: 30px;
   }
@@ -45,9 +45,9 @@
     background-position: center;
   }
 
-  & .feature-item + .feature-item {
-    margin-left: 30px;
-  }
+  // & .feature-item + .feature-item {
+  //   margin-left: 30px;
+  // }
 }
 
 .feature-title {

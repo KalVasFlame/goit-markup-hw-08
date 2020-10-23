@@ -1,12 +1,11 @@
 .portfolio-btn-list {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 94px;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  margin-top: 45px;
+  margin-bottom: 40px;
 
-  & .portfolio-item + .portfolio-item {
-    margin-left: 8px;
+  & .portfolio-item:not(:last-child) {
+    margin-right: 8px;
   }
 
   & button:hover,
@@ -19,6 +18,10 @@
     transition: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 250ms;
   }
+}
+
+.portfolio-item {
+  margin-top: 15px;
 }
 
 .portfolio-btn {

@@ -2,7 +2,7 @@
   padding-bottom: 94px;
   padding-top: 94px;
   text-align: center;
-  background-color: subBgColor;
+  background-color: $subBgColor;
   /* outline: 1px solid blue; */
 }
 
@@ -14,18 +14,17 @@
   letter-spacing: 0.03em;
   margin-bottom: 50px;
 }
+
 .our-team-list {
-  display: flex;
-
-  & .our-team-item + .our-team-item {
-    margin-left: 30px;
-  }
-
   & .our-team-item {
-    width: 270px;
+    width: 450px;
     background: $whiteColor;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+  }
+
+  & .our-team-item + .our-team-item {
+    margin-top: 30px;
   }
 
   & .our-team-item-title {
@@ -60,9 +59,11 @@
   align-items: center;
   justify-content: center;
 }
+
 .social-icon {
   fill: $iconMainColor;
 }
+
 .our-team-social-item:hover {
   background-color: $accentColor;
   border-radius: 50%;

@@ -11,33 +11,43 @@
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
   <body>
-    <header class="header">
-      <div class="container header-container">
-      <a href="./"><p class="logo">Web<span class="logo-accent">Studio</span></p></a>
-    <nav class="nav">
+    <header class="header container header-container">
+      <div class="nav-container">
+        <a href="./"><p class="logo">Web<span class="logo-accent">Studio</span></p></a>
+          <nav class="nav">
+        <button type="button" aria-controls="menu-container" class="burger-btn is-open" 
+        data-menu-button>
+        <svg width="40" height="40" aria-label="переключа
+        тель мобильного меню">
+        <use class="burger-icon" href="./img/icons/symbol-defs.svg#close-burger-btn"/>
+        <use class="close-burger-icon" href="./img/icons/symbol-defs.svg#burger-btn"/>      </button>
+      </svg>
+      <div class="menu-conteiner" id="menu-container"
+      data-menu>
       <ul class="nav-list">
         <li class="nav-item"><a href="./" class="nav-link current">Студия</a></li>
         <li class="nav-item"><a href="./portfolio.html" class="nav-link">Портфолио</a></li>
         <li class="nav-item"><a href="#our-team" class="nav-link">Контакты</a></li>
       </ul>
-    </nav>
-    <ul class="contacts">
-      
-      <li class="contacts-item">
-        <a href="mailto:info@devstudio.com" class="contacts-link">
-        <svg class="contacts-icon mail-icon">
-          <use href="./img/icons/symbol-defs.svg#icon-mail"/>
-        </svg>
+      <ul class="contacts">
+        
+        <li class="contacts-item">
+          <a href="mailto:info@devstudio.com" class="contacts-link">
+            <svg class="contacts-icon mail-icon">
+              <use href="./img/icons/symbol-defs.svg#icon-mail"/>
+            </svg>
           <span class="contacts-text">info@devstudio.com</span>
-      </a>
+        </a>
       </li>
       <li class="contacts-item">
         <a href="tel:+380961111111" class="contacts-link">
           <svg class="contacts-icon tel-icon">
             <use href="./img/icons/symbol-defs.svg#icon-phone" />
           </svg><span class="contacts-text">+38 096 111 11 11</span></a>
-      </li>
+        </li>
       </ul>
+      </div>
+    </nav>
     </div>
     </header>
     <main>
@@ -146,7 +156,7 @@
         <div class="container">
 <h2 class="our-team-title">Наша команда</h2>
 <ul class="our-team-list">
-  <li class="our-team-item"><img src="./img/our-team/our-team_1.jpg" alt="" width="270" height="260">
+  <li class="our-team-item"><img src="./img/our-team/our-team_1.jpg" alt="" width="450">
   <h3 class="our-team-item-title">Игорь Демьяненко</h3>
 <p class="our-team-item-text">Product Designer</p>
 <ul class="our-team-social-list">
@@ -167,7 +177,7 @@
                     <use href='./img/icons/symbol-defs.svg#icon-linkedin' />
                   </svg></a></li>
 </ul></li>
-  <li class="our-team-item"><img src="./img/our-team/our-team_2.jpg" alt="" width="270" height="260">
+  <li class="our-team-item"><img src="./img/our-team/our-team_2.jpg" alt="" width="450">
   <h3 class="our-team-item-title">Ольга Репина</h3>
 <p class="our-team-item-text">Frontend Developer</p>
 <ul class="our-team-social-list">
@@ -188,7 +198,7 @@
                     <use href='./img/icons/symbol-defs.svg#icon-linkedin' />
                   </svg></a></li>
 </ul></li>
-  <li class="our-team-item"><img src="./img/our-team/our-team_3.jpg" alt="" width="270" height="260">
+  <li class="our-team-item"><img src="./img/our-team/our-team_3.jpg" alt="" width="450">
   <h3 class="our-team-item-title">Николай Тарасов</h3>
 <p class="our-team-item-text">Marketing</p>
 <ul class="our-team-social-list">
@@ -209,7 +219,7 @@
                     <use href='./img/icons/symbol-defs.svg#icon-linkedin' />
                   </svg></a></li>
 </ul></li>
-  <li class="our-team-item"><img src="./img/our-team/our-team_4.jpg" alt="" width="270" height="260">
+  <li class="our-team-item"><img src="./img/our-team/our-team_4.jpg" alt="" width="450">
   <h3 class="our-team-item-title">Михаил Ермаков</h3>
 <p class="our-team-item-text">UI Designer</p>
 <ul class="our-team-social-list">
@@ -310,7 +320,8 @@
         </div>
       </div>
     </footer>
-    <script src="./js/js.js"></script>
+    <script src="./js/menu.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 
 </html>

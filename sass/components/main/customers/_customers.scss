@@ -7,20 +7,26 @@
   margin-bottom: 50px;
 }
 .customers-list {
-  display: inline-flex;
+  display: flex;
+  flex-wrap: wrap;
 
-  & .customers-item + .customers-item {
-    margin-left: 30px;
-  }
+  // & .customers-item + .customers-item {
+  //   margin-left: 30px;
+  // }
 }
 .customers-item {
   display: flex;
-  width: 170px;
+  width: 208px;
   height: 90px;
+  margin: 7px 0;
   align-items: center;
   justify-content: center;
   border: 1px solid #afb1b8;
   border-radius: 4px;
+
+  &:nth-child(odd) {
+    margin-right: 30px;
+  }
 
   &:hover {
     border-color: $accentColor;

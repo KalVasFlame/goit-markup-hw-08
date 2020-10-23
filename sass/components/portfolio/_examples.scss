@@ -12,9 +12,9 @@
     transition-duration: 250ms;
   }
 
-  & .examples-item:not(:nth-last-child(-n + 3)) {
-    margin-bottom: 30px;
-  }
+  // & .examples-item:not(:nth-last-child(-n + 3)) {
+  //   margin-bottom: 30px;
+  // }
 
   & .examples-title {
     font-size: 18px;
@@ -25,15 +25,15 @@
 
   & .examples-item {
     border: 1px solid #eeeeee;
-    width: 372px;
+    // width: 372px;
   }
 
-  & .examples-item:not(:nth-child(3n)) {
-    margin-right: 30px;
+  & .examples-item + .examples-item {
+    margin-top: 30px;
   }
 
   & .examples-item:hover .examples-text {
-    opacity: 1;
+    opacity: 0.9;
     transform: translatey(0);
   }
 }

@@ -1,17 +1,21 @@
 .nav {
-  margin-left: 93px;
-}
-.nav-list {
   display: flex;
+  width: 100%;
+}
+
+.nav-list {
+  margin-top: 60px;
 
   & .nav-item + .nav-item {
-    margin-left: 50px;
+    margin-top: 50px;
   }
+  // display: flex;
 }
+
 .nav-link {
   position: relative;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 1.2;
   letter-spacing: 0.02em;
 
@@ -38,5 +42,41 @@
   }
   &.current:hover::after {
     width: 100%;
+  }
+}
+.nav-container {
+  display: flex;
+}
+
+.burger-btn {
+  display: inline-flex;
+  margin-left: auto;
+  margin-right: 15px;
+  padding: 0;
+  background-color: transparent;
+
+  & .close-burger-icon {
+    display: none;
+  }
+
+  &.is-open .close-burger-icon {
+    display: block;
+  }
+  &.is-open .burger-icon {
+    display: none;
+  }
+}
+
+.menu-conteiner {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  background-color: $whiteColor;
+
+  &.is-open {
+    display: block;
   }
 }
