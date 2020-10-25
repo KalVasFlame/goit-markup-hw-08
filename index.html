@@ -12,17 +12,16 @@
 </head>
   <body>
     <header class="header container header-container">
-      <div class="nav-container">
-        <a href="./"><p class="logo">Web<span class="logo-accent">Studio</span></p></a>
-          <nav class="nav">
+        <nav class="nav">
+        <a href="./"><p class="logo"><span class="logo-accent">Web</span>Studio</p></a>
         <button type="button" aria-controls="menu-container" class="burger-btn is-open" 
         data-menu-button>
         <svg width="40" height="40" aria-label="переключа
-        тель мобильного меню">
-        <use class="burger-icon" href="./img/icons/symbol-defs.svg#close-burger-btn"/>
-        <use class="close-burger-icon" href="./img/icons/symbol-defs.svg#burger-btn"/>      </button>
-      </svg>
-      <div class="menu-conteiner" id="menu-container"
+        тель мобильного меню" class="burger-btn-icon">
+        <use class="close-burger-icon" href="./img/icons/symbol-defs.svg#burger-btn"/>
+        <use class="burger-icon" href="./img/icons/symbol-defs.svg#close-burger-btn"/></button>
+        </svg>
+      <div class="menu" id="menu-container"
       data-menu>
       <ul class="nav-list">
         <li class="nav-item"><a href="./" class="nav-link current">Студия</a></li>
@@ -30,10 +29,9 @@
         <li class="nav-item"><a href="#our-team" class="nav-link">Контакты</a></li>
       </ul>
       <ul class="contacts">
-        
         <li class="contacts-item">
           <a href="mailto:info@devstudio.com" class="contacts-link">
-            <svg class="contacts-icon mail-icon">
+            <svg class="contacts-icon mail-icon" width="16" height="11">
               <use href="./img/icons/symbol-defs.svg#icon-mail"/>
             </svg>
           <span class="contacts-text">info@devstudio.com</span>
@@ -41,14 +39,13 @@
       </li>
       <li class="contacts-item">
         <a href="tel:+380961111111" class="contacts-link">
-          <svg class="contacts-icon tel-icon">
+          <svg class="contacts-icon tel-icon" width="10" height="15">
             <use href="./img/icons/symbol-defs.svg#icon-phone" />
           </svg><span class="contacts-text">+38 096 111 11 11</span></a>
         </li>
       </ul>
       </div>
     </nav>
-    </div>
     </header>
     <main>
       <section class="hero">

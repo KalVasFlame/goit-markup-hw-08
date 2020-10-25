@@ -1,0 +1,69 @@
+.header {
+  position: relative;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.burger-btn {
+  margin-left: auto;
+  background-color: inherit;
+
+  .close-burger-icon {
+    display: none;
+  }
+
+  &.is-open .close-burger-icon {
+    display: block;
+  }
+
+  &.is-open .burger-icon {
+    display: none;
+  }
+
+  &:focus .burget-btn-icon,
+  &:hover .burger-btn-icon {
+    fill: $accent;
+    transition: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+  }
+}
+.menu {
+  display: none;
+  position: absolute;
+  top: 101%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  background-color: $white;
+
+  &.is-open {
+    display: block;
+  }
+}
+
+.nav-list {
+  margin-top: 60px;
+
+  & .nav-item + .nav-item {
+    margin-top: 40px;
+  }
+}
+
+.nav-link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: $mainBlack;
+
+  &.current::after {
+  }
+}
+
+.contacts {
+  margin-top: 60px;
+}
