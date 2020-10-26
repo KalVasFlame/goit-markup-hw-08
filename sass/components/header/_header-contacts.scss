@@ -1,0 +1,36 @@
+.contacts-text {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+.contact-tel {
+  margin-top: 16px;
+  margin-bottom: 60px;
+}
+
+.contacts-icon {
+  margin-right: 5px;
+  fill: $text;
+}
+
+.contacts-link {
+  color: $text;
+
+  &:hover,
+  &:focus {
+    transition: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+    color: $accent;
+  }
+  &:hover .contacts-icon,
+  &:focus .contacts-icon {
+    transition: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+    fill: $accent;
+  }
+  & .tel-icon {
+    margin-right: 4px;
+  }
+}
