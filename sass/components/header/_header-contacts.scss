@@ -1,17 +1,43 @@
+.contacts-list {
+  margin-top: 60px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 0;
+    margin-left: auto;
+  }
+
+  @media screen and (min-width: 1230px) {
+    display: flex;
+
+    & .contacts-item + .contacts-item {
+      margin-left: 50px;
+    }
+  }
+}
+
 .contacts-text {
   font-weight: 500;
   font-size: 18px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+
+  @media screen and (min-width: 768px) {
+    font-size: 12px;
+  }
 }
 
 .contact-tel {
   margin-top: 16px;
   margin-bottom: 60px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 }
 
 .contacts-icon {
-  margin-right: 5px;
+  // margin-right: 5px;
   fill: $text;
 }
 
@@ -32,5 +58,9 @@
   }
   & .tel-icon {
     margin-right: 4px;
+
+    @media screen and (min-width: 768px) {
+      margin-top: 0;
+    }
   }
 }
