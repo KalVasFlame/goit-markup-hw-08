@@ -4,5 +4,8 @@
 .wrapper {
   text-align: center;
 
-  // display: flex;
+  @media screen and (min-width: 1230px) {
+    display: flex;
+    align-items: center;
+  }
 }
