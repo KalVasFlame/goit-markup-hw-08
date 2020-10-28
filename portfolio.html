@@ -11,36 +11,41 @@
   <link rel="stylesheet" href="./css/main.min.css" />
 </head>
 <body>
-  <header class="header">
-    <div class="container header-container">
-      <a href="./index.html">
-        <p class="logo">Web<span class="logo-accent">Studio</span></p>
+  <header class="header container header-container">
+    <nav class="nav">
+      <a href="./">
+        <p class="logo"><span class="logo-accent">Web</span>Studio</p>
       </a>
-      <nav class="nav">
+      <button type="button" aria-controls="menu-container" class="burger-btn is-open" data-menu-button>
+        <svg width="40" height="40" aria-label="переключа
+          тель мобильного меню" class="burger-btn-icon">
+          <use class="close-burger-icon" href="./img/icons/symbol-defs.svg#burger-btn" />
+          <use class="burger-icon" href="./img/icons/symbol-defs.svg#close-burger-btn" /></button>
+      </svg>
+      <div class="menu" id="menu-container" data-menu>
         <ul class="nav-list">
-          <li class="nav-item"><a href="./index.html" class="nav-link">Студия</a></li>
-          <li class="nav-item"><a href="./portfolio.html" class="nav-link current">Портфолио</a></li>
-          <li class="nav-item"><a href="./index.html#our-team" class="nav-link">Контакты</a></li>
+          <li class="nav-item"><a href="./" class="nav-link current">Студия</a></li>
+          <li class="nav-item"><a href="./portfolio.html" class="nav-link">Портфолио</a></li>
+          <li class="nav-item"><a href="#our-team" class="nav-link">Контакты</a></li>
         </ul>
-      </nav>
-      <ul class="contacts">
-  
-        <li class="contacts-item">
-          <a href="mailto:info@devstudio.com" class="contacts-link">
-            <svg class="contacts-icon mail-icon">
-              <use href="./img/icons/symbol-defs.svg#icon-mail" />
-            </svg>
-            <span class="contacts-text">info@devstudio.com</span>
-          </a>
-        </li>
-        <li class="contacts-item">
-          <a href="tel:+380961111111" class="contacts-link">
-            <svg class="contacts-icon tel-icon">
-              <use href="./symbol-defs.svg#icon-phone" />
-            </svg><span class="contacts-text">+38 096 111 11 11</span></a>
-        </li>
-      </ul>
-    </div>
+        <ul class="contacts-list">
+          <li class="contacts-item">
+            <a href="mailto:info@devstudio.com" class="contacts-link">
+              <svg class="contacts-icon mail-icon" width="16" height="11">
+                <use href="./img/icons/symbol-defs.svg#icon-mail" />
+              </svg>
+              <span class="contacts-text">info@devstudio.com</span>
+            </a>
+          </li>
+          <li class="contacts-item contact-tel">
+            <a href="tel:+380961111111" class="contacts-link">
+              <svg class="contacts-icon tel-icon" width="10" height="16">
+                <use href="./img/icons/symbol-defs.svg#icon-phone" />
+              </svg><span class="contacts-text">+38 096 111 11 11</span></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
   </header>
   <main>
     <section class="portfolio">
@@ -189,7 +194,7 @@
     <div class="container">
       <div class="wrapper">
         <div>
-          <a href="./index.html" class="footer-logo-link">
+          <a href="./" class="footer-logo-link">
             <p class="footer-logo logo">Web<span class="footer-logo-accent">Studio</span></p>
           </a>
           <ul class="footer-contacts-list">
@@ -204,23 +209,23 @@
                 rel="noopener noreferrer Nofollow"><span class="footer-tel-text">tel:+38 099 111 11 11</span></a></li>
           </ul>
         </div>
-        <div>
-          <h2 class="join-us">Присоединяйтесь</h2>
+        <div class="join-us">
+          <h2 class="join-us-title"><b>Присоединяйтесь</b></h2>
           <ul class="footer-social-list">
-            <li class="footer-social-item"><a href="https://www.instagram.com/" class="footer-social-link" target="_blank"
-                rel="noopener noreferrer Nofollow"><svg class="footer-social-icon instagram-icon">
+            <li class="footer-social-item"><a href="https://www.twitter.com/" class="footer-social-link" target="_blank"
+                rel="noopener noreferrer Nofollow"><svg class="footer-social-icon twitter-icon" width="20" height="20">
                   <use href='./img/icons/symbol-defs.svg#icon-instagram' />
                 </svg></a></li>
             <li class="footer-social-item"><a href="https://www.twitter.com/" class="footer-social-link" target="_blank"
-                rel="noopener noreferrer Nofollow"><svg class="footer-social-icon twitter-icon">
+                rel="noopener noreferrer Nofollow"><svg class="footer-social-icon twitter-icon" width="20" height="20">
                   <use href='./img/icons/symbol-defs.svg#icon-twitter' />
                 </svg></a></li>
             <li class="footer-social-item"><a href="https://www.facebook.com/" class="footer-social-link" target="_blank"
-                rel="noopener noreferrer Nofollow"><svg class="footer-social-icon facebook-icon">
+                rel="noopener noreferrer Nofollow"><svg class="footer-social-icon facebook-icon" width="20" height="20">
                   <use href='./img/icons/symbol-defs.svg#icon-facebook' />
                 </svg></a></li>
             <li class="footer-social-item"><a href="https://www.linkedin.com/" class="footer-social-link" target="_blank"
-                rel="noopener noreferrer Nofollow"><svg class="footer-social-icon linkedin-icon">
+                rel="noopener noreferrer Nofollow"><svg class="footer-social-icon linkedin-icon" width="20" height="20">
                   <use href='./img/icons/symbol-defs.svg#icon-linkedin' />
                 </svg></a></li>
           </ul>
@@ -229,7 +234,7 @@
           <form class="subscribe-form">
             <label for="subscribe-input" class="subscribe-label">Подпишитесь на рассылку</label>
             <input type="text" name="subscribe-input" id="subscribe-input" class="subscribe-input" placeholder="E-mail">
-        
+  
             <button class="subscribe-btn"><span class="subscribe-btn-text">Подписаться</span>
               <div class="subscribe-btn-img">
                 <img src="./img/icons/icons-src/subscribe.svg" alt="Dont worry be happy"></div>

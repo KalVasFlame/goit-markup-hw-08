@@ -45,7 +45,13 @@
   fill: $text;
 }
 
+.mail-icon {
+  margin-right: 3px;
+}
+
 .contacts-link {
+  display: inline-flex;
+  align-items: center;
   color: $text;
 
   &:hover,

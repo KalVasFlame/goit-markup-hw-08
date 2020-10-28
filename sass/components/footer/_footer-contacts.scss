@@ -1,0 +1,31 @@
+.footer-contacts-list {
+  margin-bottom: 60px;
+}
+.footer-contacts-address {
+  margin-bottom: 60px;
+}
+
+.footer-contacts-address {
+  color: $white;
+
+  display: block;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  margin-bottom: 9px;
+}
+
+.footer-address-text {
+}
+.footer-contacts-mail {
+  display: block;
+  margin-bottom: 9px;
+}
+
+.footer-mail-text,
+.footer-tel-text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $subWhite;
+}
