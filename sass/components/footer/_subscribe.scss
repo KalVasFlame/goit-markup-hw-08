@@ -43,7 +43,6 @@
 }
 
 .subscribe-label {
-  text-align: left;
   display: block;
   margin-bottom: 20px;
   font-weight: 700;
@@ -52,6 +51,10 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: $white;
+
+  @media screen and (min-width: 1230px) {
+    text-align: left;
+  }
 }
 .subscribe-btn {
   display: inline-flex;
