@@ -5,6 +5,7 @@
   transform: translate(-50%, -50%);
   animation: animate 100ms;
   width: 100%;
+  max-width: 450px;
   height: 609px;
   text-align: left;
   background-color: $white;
@@ -15,6 +16,10 @@
     content: "";
   }
 
+  @media screen and(min-width: 768px) {
+    top: 50%;
+    width: 450px;
+  }
   @media screen and(min-width: 1230px) {
     top: 50%;
     width: 528px;
@@ -47,7 +52,7 @@
   margin: 0 auto 10px;
 
   @media screen and(min-width: 1230px) {
-    width: 448px;
+    width: calc(100% - 90px);
   }
 }
 
@@ -201,7 +206,7 @@
   }
 
   @media screen and(min-width: 1230px) {
-    width: 448px;
+    width: 100%;
   }
 }
 

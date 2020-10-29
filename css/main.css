@@ -454,6 +454,7 @@ p {
   -webkit-animation: animate 100ms;
           animation: animate 100ms;
   width: 100%;
+  max-width: 450px;
   height: 609px;
   text-align: left;
   background-color: #ffffff;
@@ -464,6 +465,13 @@ p {
 
 .order::before {
   content: "";
+}
+
+@media screen and (min-width: 768px) {
+  .order {
+    top: 50%;
+    width: 450px;
+  }
 }
 
 @media screen and (min-width: 1230px) {
@@ -502,7 +510,7 @@ p {
 
 @media screen and (min-width: 1230px) {
   .form-field {
-    width: 448px;
+    width: calc(100% - 90px);
   }
 }
 
@@ -684,7 +692,7 @@ p {
 
 @media screen and (min-width: 1230px) {
   .text-area {
-    width: 448px;
+    width: 100%;
   }
 }
 
