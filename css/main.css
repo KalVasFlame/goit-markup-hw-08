@@ -477,7 +477,8 @@ p {
 @media screen and (min-width: 1230px) {
   .order {
     top: 50%;
-    width: 528px;
+    width: 100%;
+    max-width: 528px;
     height: 581px;
   }
 }
