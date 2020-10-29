@@ -28,7 +28,11 @@
       width: calc((50% - 45px) / 2);
     }
     &:last-child {
-      width: calc(50% - 15px);
+      width: 50%;
+
+      margin-right: 0;
+      margin-left: auto;
+      // width: calc(50% - 15px);
     }
   }
 }
