@@ -1146,6 +1146,7 @@ p {
 }
 
 .footer {
+  padding-top: 60px;
   background-color: #2f303a;
 }
 
@@ -1153,11 +1154,13 @@ p {
   text-align: center;
 }
 
-@media screen and (min-width: 1230px) {
+@media screen and (min-width: 768px) {
   .wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -1165,13 +1168,27 @@ p {
 }
 
 .footer-logo {
-  padding-top: 60px;
   margin-bottom: 20px;
   color: #2196f3;
 }
 
 .footer-logo-accent {
   color: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+  .address {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1230px) {
+  .address {
+    width: 25%;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: left;
+  }
 }
 
 .footer-contacts-list {
@@ -1208,11 +1225,19 @@ p {
   margin-bottom: 60px;
 }
 
+@media screen and (min-width: 768px) {
+  .join-us {
+    margin-top: 8px;
+    width: 0%;
+  }
+}
+
 @media screen and (min-width: 1230px) {
   .join-us {
+    width: 25%;
+    margin-left: 0;
+    margin-right: 0;
     margin-bottom: 0;
-    margin-left: 70px;
-    margin-right: 93px;
   }
 }
 
@@ -1284,9 +1309,26 @@ p {
   padding-bottom: 60px;
 }
 
+@media screen and (min-width: 768) {
+  .subscribe {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 @media screen and (min-width: 1230) {
   .subscribe {
     padding-bottom: 0;
+    width: 50%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 768) {
+  .subscribe-form {
+    width: 100%;
   }
 }
 
@@ -1317,10 +1359,9 @@ p {
 }
 
 .subscribe-btn {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 200px;
   height: 50px;
   margin-left: 12px;
@@ -1339,6 +1380,13 @@ p {
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .subscribe-btn {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .subscribe-btn-text {

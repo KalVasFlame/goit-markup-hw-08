@@ -1,11 +1,16 @@
 .footer {
+  padding-top: 60px;
   background-color: $blackBg;
 }
 .wrapper {
   text-align: center;
 
-  @media screen and (min-width: 1230px) {
+  @media screen and (min-width: 768px) {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
+  }
+  @media screen and (min-width: 1230px) {
+    // align-items: center;
   }
 }
