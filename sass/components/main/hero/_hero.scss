@@ -13,14 +13,14 @@
     background-image: url(../img/hero/hero-bg-mobile_x2.jpg);
   }
 
-  @media screen and (mix-width: 489px) {
+  @media screen and (min-width: 489px) {
     background-image: url(../img/hero/hero-bg-tablet.jpg);
 
     @media (min-resolution: 2dppx) {
       background-image: url(../img/hero/hero-bg-tablet_x2.jpg);
     }
   }
-  @media screen and (mix-width: 769px) {
+  @media screen and (min-width: 769px) {
     background-image: url(../img/hero/hero-bg-desk.jpg);
 
     @media (min-resolution: 2dppx) {

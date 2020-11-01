@@ -410,25 +410,25 @@ p {
   }
 }
 
-@media screen and (mix-width: 489px) {
+@media screen and (min-width: 489px) {
   .hero {
     background-image: url(../img/hero/hero-bg-tablet.jpg);
   }
 }
 
-@media screen and (mix-width: 489px) and (-webkit-min-device-pixel-ratio: 2), screen and (mix-width: 489px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 489px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 489px) and (min-resolution: 2dppx) {
   .hero {
     background-image: url(../img/hero/hero-bg-tablet_x2.jpg);
   }
 }
 
-@media screen and (mix-width: 769px) {
+@media screen and (min-width: 769px) {
   .hero {
     background-image: url(../img/hero/hero-bg-desk.jpg);
   }
 }
 
-@media screen and (mix-width: 769px) and (-webkit-min-device-pixel-ratio: 2), screen and (mix-width: 769px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 769px) and (min-resolution: 2dppx) {
   .hero {
     background-image: url(../img/hero/hero-bg-desk_x2.jpg);
   }
