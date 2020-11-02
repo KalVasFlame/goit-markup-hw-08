@@ -23,6 +23,10 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: $white;
+
+  @media screen and (min-width: 1230px) {
+    text-align: left;
+  }
 }
 
 .footer-social-list {
@@ -31,6 +35,10 @@
 
   & .footer-social-item + .footer-social-item {
     margin-left: 10px;
+  }
+
+  @media screen and (min-width: 1230px) {
+    display: flex;
   }
 }
 
